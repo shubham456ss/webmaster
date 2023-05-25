@@ -1,0 +1,511 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    overflow-block: none;
+    /* font-size: 18px; */
+}
+:root{
+    --Mobile: 375px;
+    --Desktop: 1440px;
+    --Gray: #BFBFBF;
+    --Grayish_Violet: #9E9AA7;
+    --Very_Dark_Blue: #35323E;
+    --Very_Dark_Violet: #232127;
+    --Dark_Violet: #3B3054;
+    --Cyan: #2ACFCF;
+    --Red: #F46262;
+    }
+/* body{ */
+    /* background-color: #F46262; */
+    /* max-width: 1440px; */
+    /* min-width: var(--Mobile); */
+/* } */
+
+nav{
+    display: flex;
+    height: 10vh;
+    color:rgb(136, 113, 141);
+    justify-content:space-evenly;
+    justify-items: auto; 
+    align-items:center ;
+    background-color:white;
+}
+
+header{
+    display: flex;
+    justify-content:space-evenly;
+}
+header img{
+    margin: auto 30px;
+}
+.nav-list {
+    display:flex;
+    justify-content:center;
+    align-items:center ;
+    width: 600px;
+    text-align: center;
+    cursor: pointer;
+    /* background-color: #F46262; */
+    margin-right: 100px;
+    height: 100%;
+}
+.nav-log{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center ;
+    margin-left: 200px;
+    flex-direction: row;
+    height: 100%;
+}
+nav li{
+    list-style: none;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+}
+nav li:hover{
+    background-color: cyan;
+}
+
+
+/******************************************** Upper body **************************************************/
+.upper_body{
+    display: flex;
+    height: 100%;
+    flex-direction: row-reverse;
+    flex-wrap:wrap;
+    justify-content:space-between;
+
+}
+.search_bar{
+
+    display:flex;
+    width:70% ;
+    margin:auto;
+    height:150px;
+    border-radius: 5px;
+    align-items: center;
+    transform:translateY(75px) ;
+    background-image:url("images/bg-shorten-desktop.png") ;
+    background-color:rgb(65, 2, 86); 
+}
+    
+.search_bar input{
+
+    display:flex;
+    margin: auto;
+    padding-left:10px;
+    font-size: 18px;
+    height: 40px;
+    width: 70%;
+    outline: none;
+    border: none;
+    border-radius: 5px;   
+}
+
+.short_it{
+    display:flex;
+    margin: auto;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    /* background: linear-gradient(210deg, green,red,blue,pink,blue ); */
+    background-color:#2ACFCF;
+    border-radius: 5px;
+    /* animation: copied 2s ease-in .5s; */
+}
+
+@keyframes copied{
+    from{   
+        content:"";
+        background-color: greenyellow; 
+    }
+}
+
+.logo{
+    display: block;
+    position: relative;
+    left:100px;
+    height:400px;
+    width: 550px;
+}
+.More_than{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width: 500px;
+    height: 100%;
+    margin:auto;
+    /* background-color: yellow; */
+}
+
+.M{
+    display:flex;
+    width: 100%;
+    font-size: 60px;
+    font-weight: 900;
+    margin:auto;
+}
+
+.B{
+    display:block;
+    width:70%;
+    text-align:left;
+    font-size: 17px;
+    color: var(--Gray) ;
+}
+
+.get_start{
+    display: block;
+    width:150px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #2ACFCF;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+/******************************************** Upper body **************************************************/
+/******************************************** lower body **************************************************/
+.lower_body{
+
+    display:flex;
+    height:135vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:rgb(225, 231, 236);
+}
+
+/******************************************** lower body **************************************************/
+/********************************************   Tiltle  **************************************************/
+
+.title{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 60%;
+    margin: 15% auto auto auto;
+    text-align: center;
+}
+
+.title .Ad{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 700;
+    /* background-color: aqua; */
+}
+
+.title .track{
+    display:flex;
+    text-align: center;
+    width:60%;
+    margin:auto;
+    font-size: 16px;
+    color: var(--Grayish_Violet);
+    /* background-color:aqua ; */
+
+}
+/********************************************   Tiltle  **************************************************/
+/*********************************************  Cards  ***************************************************/
+
+.cards-in{
+    display:flex;
+    position: relative;
+    top:-100px;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    height: 230px;
+    flex-wrap: wrap;
+
+}
+ .card{
+    display:flex;
+    flex-direction: column;
+    height: 230px;
+    width: 300px;
+    padding-left: 30px;
+    background-color: white;
+    border-radius: 2px;
+  
+}
+
+.card p{
+    margin-top: 20px;
+    width: 85%;
+    font-size: 15px;
+    color: var(--Gray);
+}
+
+.circle{
+    display: flex;
+    position: relative;
+    transform: translateY(-30px);
+    align-items: center;
+    height:60px;
+    width: 60px;
+    background-color:var(--Very_Dark_Violet);
+    border-radius: 50%;
+}    
+
+.card img{
+    margin: auto;
+    width: 50%;
+}
+#card-2{
+    display: flex;
+    position: relative;
+    top:30px;
+}
+#card-3{
+    display: flex;
+    position: relative;
+    top:60px;
+}
+
+/*********************************************  Cards  ***************************************************/
+/*********************************************  Cards-Line  ***************************************************/
+
+.card-line{
+    display: flex;
+    position: relative;
+    color: var(--Cyan);
+    width: 25px;
+    height: 5px;
+    background-color: var(--Cyan);
+}
+
+/********************************************* burger line  ***************************************************/
+.burger{
+    display: none;
+    width: 30px;
+    height: 20px;
+    margin: auto 30px;
+    cursor: pointer;
+}
+
+.line{
+    width: 100%;
+    height: 4px;
+    margin: 4px;
+    background-color:grey;
+    border-radius: 2px;
+}
+
+ footer{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-image:url("images/bg-boost-desktop.png") ;
+    background-color:rgb(68, 0, 90);
+ } 
+footer .boost{
+    display:flex;
+    width: 100%;
+    font-size:30px;
+    margin: auto;
+}
+
+input::placeholder{
+   font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+  .lower_body{
+    height:170vh;
+  }
+  header{
+    display: block;
+    height: 10vh;
+
+  }
+  header img{
+    position: relative;
+    top: 25px;
+    height: 30px;
+  }
+    nav{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height:50vh;
+        width:90%;
+        margin: 20px auto  ;
+        background-color: var(--Dark_Violet);
+        color: #ffffff;
+        border-radius: 15px;
+    }
+    span {
+        content:"";
+        position: relative;
+        height:1px;
+        width:70%;
+        top:20px;
+        background-color: var(--Grayish_Violet);
+    }
+    .nav-list {
+        margin: auto;
+        margin-top:30px ;
+        flex-direction:column;
+        width: 80%;
+        cursor: pointer;
+    }
+    .nav-log{
+        margin: auto;
+        margin-bottom:30px ;
+        flex-direction: column;
+        width: 80%;
+    }
+   
+    nav li{
+        
+        margin: 5px auto ;
+        padding: 10px;
+        width: 90%;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    input[type="checkbox"]:checked ~ nav,.logo{
+        display:flex;
+        z-index: -1;
+    }
+
+    nav li:hover{
+       background-color: #2ACFCF;
+       border-radius: 30px;
+    }
+    .burger{
+        display: block;
+        position: relative;
+        top: -10px;
+        left: 400px;
+    }
+
+    .logo{
+        width: 550px;
+    }
+   
+    .More_than{
+        margin-top: 20px;
+        text-align: center;
+        align-items: center;
+    }
+    .M{
+        font-size: 50px;
+        font-weight: 650;
+    }
+    .B{
+        width: 80%;
+        text-align: center;
+    }
+    .search_bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background:url("images/bg-shorten-mobile.png") no-repeat;
+        background-color:rgb(68, 0, 90);
+        background-size: 500;
+        background-position:100% 0;
+    }
+    .search_bar input{
+        position: relative;
+        top:10px;
+        width: 83%;
+    }
+    .short_it{
+        position: relative;
+        bottom:10px;
+        width: 80%;
+        /* padding: 10px; */
+    }
+    .title{
+        width: 80%;
+        margin: 27% auto auto auto;
+    }
+    .title .Ad{
+        width: 100%;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .title .track{
+        width:80%;
+    }
+    .cards-in{
+        display: block;
+        top:-40%;
+    }
+    .card{
+        margin: auto;
+    }
+    .circle{
+        right: -35%;
+    }
+    .card-line{
+        margin: auto;
+        height:55px;
+        width: 5px;
+    }
+    .card img{
+        margin: auto;
+        width: 50%;
+    }
+    #card-2,#card-3{
+        display: flex;
+        top: 5px;
+        z-index: 1;
+    }
+    
+    footer{
+        width: 100%;
+        height: 50vh;
+        background-image:url("images/bg-boost-mobile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+     } 
+
+}

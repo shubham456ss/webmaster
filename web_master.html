@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=", initial-scale="1.0" />
+    <title>Shortly | Web master</title>
+    <link rel="stylesheet" href="web_master.css">
+  </head>
+  <body>
+
+    <header>
+      <img class="shortly" src="images/logo.png">
+      
+      <input type="checkbox" id="burger" style="display: none;">
+        <label class="burger" for="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+
+      <nav>
+        <ul class="nav-list">
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Resources</li>
+        </ul>
+
+       <span></span>
+
+        <ul class="nav-log">
+          <li class="login">Login</li>
+          <li class="signup">Sign up</li>
+        </ul>
+
+      </nav>
+    </header>
+
+    <main class="container">
+
+      <section class="upper_body">
+
+              <img  class="logo" src="images/illustration-working.png" ><!--4B3F6B-->
+
+              <!-- <section class="" style="width:500px; height:200px;"><svg xmlns="http://www.w3.org/2000/svg" width="1440" height="250"><g fill="#4B3F6B" fill-rule="odd"><path d="M830-63.482C830 19.351 854.36 78.678 944.732 117c90.371 38.321 177.686 3.352 265.277 23.1 87.59 20.048 87.59 149.195 170.077 228.671 82.486 79.476 256.405 98.781 397.82 18.15 141.415-80.632 205.52-268.896 1.267-379.902C1898.919-103.687 1817.943-205 1427.236-205S830-146.314 830-63.482zM-263.351 570.909c29.685 77.331 73.689 123.988 171.79 127.377 98.102 3.39 167.085-60.547 256.043-73.22 88.958-12.674 135.24 107.895 240.73 152.532 105.488 44.638 274.775.333 377.9-125.622C886.24 526.021 878.62 327.29 799.392 238.798 720.162 150.307 608.257 84.743 243.5 224.76c-364.757 140.017-536.537 268.818-506.852 346.149zM-514-377.482c0 82.833 24.36 142.16 114.732 180.482 90.371 38.321 177.686 3.352 265.277 23.4 87.59 20.048 87.59 149.195 170.077 228.671 82.486 79.476 256.405 98.781 397.82 18.15 141.415-80.632 205.52-268.896 163.267-379.902C554.919-417.687 473.943-519 83.236-519S-514-460.314-514-377.482z"/></g></svg></section> -->
+            <section class="More_than">               
+                <h1 class="M">More than just shorter links</h1>
+                <p class="B"> Build your brand's recognition and get detailed insights on how your links are performing.</p>
+                <a class="get_start" href="#">Get Started</a>
+            </section>
+            
+            <section class="search_bar">
+              <input  id="inp1" type="text"  placeholder="Shorten a link here..." >
+              <a class="short_it" id="short" href="#" >Shorten it<a>
+            </section>
+            
+      </section>
+     
+      <section class="lower_body">
+
+        <section class="title"> 
+          <section class="Ad"><h1>Advanced Statistics</h1></section>
+          <section class="track">Track how your links are performing across the web with our advanced statistics dashboard.</section>
+        </section>
+
+        <section class="cards-in">
+          
+          <div  class="card" id="card-1"><section class="circle"><img src="images/icon-brand-recognition.png" ></section><h3>Brand Recognition</h3>
+          <p>Boost your brand recognition with each click. Generic links don't 
+            mean a thing. Branded links help instil confidence in your content.</p>
+          </div>
+
+          <span class="card-line"></span>
+
+          <div  class="card" id="card-2"><section class="circle"><img src="images/icon-detailed-records.png" ></section><h3>Detailed Records</h3>
+          <p>Gain insights into who is clicking your links. Knowing when and where 
+            people engage with your content helps inform better decisions.</p>
+          </div>
+
+          <span class="card-line"></span>
+
+          <div  class="card" id="card-3"><section class="circle"><img src="images/icon-fully-customizable.png" ></section><h3>Fully Customizable</h3>
+          <p>Improve brand awareness and content discoverability through customizable 
+            links, supercharging audience engagement.</p>
+          </div>
+        </section> 
+
+      </section>
+       <footer>
+          <h4 class="boost">Boost your links today</h4>
+          <a class="get_start">Get Started</a>
+      </footer>
+    </main>
+
+  </body>
+  
+  <script>
+  const a =document.getElementById("inp1");
+  const b= document.getElementById("short");
+  let isClicked = false;
+
+   
+    
+  function getIt(link){
+    // let k="gh". ;
+  return `${link.slice(10)}`;
+  }
+
+  b.addEventListener("click",(e)=>{
+
+  // alert(a.value);
+  e.preventDefault();
+
+  if(b.innerHTML=="Shorten it"){
+      b.innerHTML="Copy It";
+      a.value="short.ly/"+getIt(a.value)+"/";
+  }
+  else if(b.innerHTML=="Copy It"){
+   
+    b.innerHTML="Copied";
+    b.style.backgroundColor="yellowgreen";
+  }
+  else{
+    b.innerHTML="Shorten it";
+    b.style.backgroundColor="#2ACFCF";
+  }
+  
+
+  });
+
+  
+  </script>
+</html>
